@@ -3,7 +3,7 @@ package HomeWork1;
 import java.util.List;
 
 public class VendingMachine {
-    private List<Product> products;
+    private final List<Product> products;
 
     public VendingMachine(List<Product> products) {
         this.products = products;
