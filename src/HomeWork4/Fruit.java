@@ -11,6 +11,6 @@ public abstract class Fruit {
 
     public Fruit(float weight, String Name) {
         this.weight = weight;
-//        this.name = name;
+        this.name = name;
     }
 }

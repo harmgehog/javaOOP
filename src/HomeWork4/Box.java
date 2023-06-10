@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Box<T extends Fruit> {
 
-    public static String name;
     private static int count = 0;
 
     private final int id = ++count;
@@ -36,5 +35,5 @@ public class Box<T extends Fruit> {
     }
 
     @Override
-    public String toString() { return "Коробка " + id; }
+    public String toString() { return "Коробка " + id + " " + fruits.get(0).getName(); }
 }
