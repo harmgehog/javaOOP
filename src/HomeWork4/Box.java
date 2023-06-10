@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Box<T extends Fruit> {
 
-//    public static String name = ;
+    public static String name;
     private static int count = 0;
 
     private final int id = ++count;
