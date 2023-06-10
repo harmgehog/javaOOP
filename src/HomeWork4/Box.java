@@ -26,14 +26,15 @@ public class Box<T extends Fruit> {
 
     public void transferFruits(Box<T> box) {
         this.fruits.addAll(box.fruits);
+        System.out.println("Фрукты из " + box + " пересыпаем в " + this);
         box.fruits.clear();
-        System.out.println("Фрукты переложены из " + box + " в " + this);
     }
 
     public void showBox() {
-        System.out.println("В " + this + " " + fruits.size() + " весом " + this.getWeight() + "кг.");
+        System.out.println("В " + this + " " + fruits.size() + " шт. весом " + this.getWeight() + " кг.");
     }
 
     @Override
-    public String toString() { return "Коробка " + id + " " + fruits.get(0).getName(); }
+    public String toString() {
+        return fruits.size() > 0 ? "Коробка " + id + " " + fruits.get(0).getName() : "Коробка " + id + " пуста."; }
 }

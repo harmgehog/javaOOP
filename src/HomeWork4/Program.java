@@ -21,27 +21,28 @@ public class Program {
      g. DONE. Не забываем про метод добавления фрукта в коробку.
      */
     public static void main(String[] args) {
-        Box<Apple> apples = new Box<>();
-        Box<Orange> oranges = new Box<>();
+        Box<Apple> box1 = new Box<>();
+        Box<Orange> box2 = new Box<>();
 
         for (int i = 0; i < 10; i++) {
-            apples.addFruit(new Apple());
-            oranges.addFruit(new Orange());
+            box1.addFruit(new Apple());
+            box2.addFruit(new Orange());
         }
 
-        apples.showBox();
-        oranges.showBox();
+        box1.showBox();
+        box2.showBox();
 
-        apples.compare(oranges);
+        box1.compare(box2);
 
         System.out.println();
-        Box<Orange> box = new Box<>();
-        for (int i = 0; i < 20; i++) box.addFruit(new Orange());
+        Box<Orange> box3 = new Box<>();
+        for (int i = 0; i < 20; i++) box3.addFruit(new Orange());
 
-        box.showBox();
-        box.transferFruits(oranges);
-        box.showBox();
-        oranges.showBox();
+        box3.showBox();
+        box3.transferFruits(box2);
+
+        box3.showBox();
+        box2.showBox();
 
     }
 
