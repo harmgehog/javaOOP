@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<order>
+  <client>Superman</client>
+  <product>Prius</product>
+  <qnt>3</qnt>
+  <price>50</price>
+</order>
