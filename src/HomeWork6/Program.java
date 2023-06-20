@@ -1,4 +1,4 @@
-package hw6;
+package HomeWork6;
 
 import java.io.File;
 
@@ -15,7 +15,7 @@ public class Program {
         saver.saveToXML(order);
         saver.saveToTxt(order);
         Order order1 = new Order();
-        loader.loadFromJson(new File("src/hw6/order.json"), order1);
+        loader.loadFromJson(new File("src/HomeWork6/order.json"), order1);
         System.out.println(order1);
     }
 }

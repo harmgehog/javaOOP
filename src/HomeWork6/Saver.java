@@ -1,4 +1,4 @@
-package hw6;
+package HomeWork6;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Saver {
 
     public void saveToJson(Order order) {
-        String fileName = "src/hw6/order.json";
+        String fileName = "src/HomeWork6/order.json";
         try (FileWriter writer = new FileWriter(fileName, false)) {
             writer.write("{\n");
             writer.write("\"client\":\""+ order.getClient() + "\",\n");
